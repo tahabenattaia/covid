@@ -33,8 +33,8 @@ model_file_path = "model.joblib"
 try:
     model = joblib.load(model_file_path)
 except FileNotFoundError:
-    # Train and save the model if it doesn't exist
-    print("Model not found. Training and saving a new model...")
+    # Train and save the model
+    print("Training and saving the model with success ...")
 
     # Create dummy data
     data = pd.DataFrame({
